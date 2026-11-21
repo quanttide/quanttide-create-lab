@@ -1,0 +1,22 @@
+[package]
+name = "quanttide-create-lab-cli"
+version = "0.1.0-alpha.1"
+edition = "2024"
+description = "量潮创意工作实验室命令行——跑一镜视频生成实验并自动落档"
+authors = ["QuantTide <opensource@quanttide.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/quanttide/quanttide-create-lab"
+readme = "README.md"
+keywords = ["quanttide", "create", "lab", "cli"]
+categories = ["command-line-utilities"]
+publish = false
+
+[[bin]]
+name = "quanttide-create-lab"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde_json = "1"
+ureq = "2"
+chrono = "0.4"

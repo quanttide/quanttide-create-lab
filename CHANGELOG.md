@@ -12,4 +12,5 @@
 
 ### 新增
 
+- 新增 `src/cli`（Rust，quanttide-create-lab-cli）：`run-shot` 跑一镜视频生成实验——服务没起则拉起 ComfyUI Desktop、提交 graph、等完成、拷产物、写 run.md，留档绑在跑上
 - 仓库初始化：README、CHANGELOG 与许可
