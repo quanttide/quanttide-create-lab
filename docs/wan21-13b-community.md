@@ -25,6 +25,14 @@ Wan 官方 Community Works 收录：TeaCache、CFG-Zero*（加速/提质）、Di
 - 官方说 8.19 GB 显存起步；本地 GTX1060 3GB 靠 CPU offload 已出 15 条 480×288/17 帧 mp4（2026-11-20）——「消费卡友好」属实，代价是慢。
 - journal 2026-11-20 记的两条经验（seed 比提示词重要、视频只需生成图间关系）与社区方向一致：一致性靠参考与多镜头项目（EchoShot、Phantom），不靠堆提示词。
 
+## 对到本仓 profile 的素材
+
+- `urban-romance/images/` 三张成图是同一对人（Lin/Lu）的三个镜头，现在各自独立抽卡会漂——**EchoShot**（同人多镜头）与 **Phantom-1.3B**（参考图保主体）就是社区对口解法：定稿成图当参考生成下一镜。
+- `urban-romance/videos/1_毛巾.md` 是 9:16 一镜到底，run-shot 目前纯文字 T2V——journal 里「留图、视频只生成图间关系」的判断，社区对口是 **VACE-1.3B**（参考图+提示词出视频），`1_2_越界的毛巾.png` 可直接当条件。
+- `1_毛巾.MOV` 是实拍参考；生成分镜局部崩了现在只能整条重抽，**FlowEdit/FlowAlign 免训练改视频**（75 秒一条）把「一次只改一个变量」变成工具。
+- 画幅：视频稿是 9:16，run-shot 缺省 480×288 横屏，跑竖屏该传 `--width 288 --height 512`（1.3B 官方只保 480P 档）。
+- 四个轮子均未装：1.3B 同档尺寸上 3G 显存有戏，能否真跑属下一批实验，不是已成事实。
+
 ## 出处（2026-11-21 抓取）
 
 - <https://github.com/Wan-Video/Wan2.1> —— 规格、官方参数、Community Works
