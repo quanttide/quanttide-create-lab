@@ -10,6 +10,10 @@
 
 ## [Unreleased]
 
+### 变更
+
+- `docs/wan21-13b-community.md` 同步接入进度：VACE-1.3B 已跑通四条实验（结论回写《先预演后渲染》，生产下限 14B Q4），另三个轮子未接入；镜卡拆档后的失效路径一并修正
+
 ### 新增
 
 - 新增 `docs/wan21-13b-community.md`：Wan2.1-T2V-1.3B 官方规格与社区成功用法查证（EchoShot 多镜头同角色、Phantom 主体一致性、免训练编辑、VACE-1.3B，均带出处），并附对到本仓 profile 素材的逐条对照
